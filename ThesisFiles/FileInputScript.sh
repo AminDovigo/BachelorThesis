@@ -3,10 +3,10 @@
 export PATH="/home/dovigoamin/miniconda3/bin:${PATH}"
 source activate ad_conda_pyomo
 
-books=(2000)
-#books=(20 40 100 200 500 1000 2000 5000 9999) #numero di libri posssibili
-n=(4 5)
-#n=(1 2 3 4 5) #numero istanze identiche con set diversi
+#books=(2000)
+books=(20 40 100 200 500 1000 2000 5000 9999) #numero di libri posssibili
+#n=(4 5)
+n=(1 2 3 4 5) #numero istanze identiche con set diversi
 
 onez="0"
 twoz="00"
@@ -66,7 +66,7 @@ for i in "${n[@]}" ; do
 					fline="1s/.*/$j $w $days/"
 					sed "$fline" $str1 > $str
 				fi
-				#qui adesso dovrei mettere l'invio del problema al cluster, come farlo boh
+				
 				filename="test1.slurm"
 				sline="2s/.*/#SBATCH -J $str_c/"
 				tline="3s/.*/#SBATCH -o output_$str/"
@@ -75,11 +75,11 @@ for i in "${n[@]}" ; do
 				sed -i "$tline" $filename
 				sed -i "$fourthline" $filename
 				cpyt="5s/.*/str='$str'/"
-				#echo $cpyt
+				#modifico il file GG
 				sed -i "$cpyt" GG.sh
 				#./GG.sh
 				sbatch test1.slurm
-				#python modelloaggconcrete.py $str
+				
 				echo $str
 				sleep 20
 				((count++))
