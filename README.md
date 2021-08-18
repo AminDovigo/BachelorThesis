@@ -22,3 +22,5 @@ Il file solchecker.py, fornito dal professore, confronta il file di input e il f
 Il file FileInputScript.sh, con l'ausilio dei rimanenti file, definisce il numero di libri e quante copie si vogliono creare con la stessa base di dati.
 Per ogni valore pari al numero di libri si producono 6 file contenenti un numero di librerie pari ad 1/10 dei libri e ad 1/4 dei libri e un numero di giorni pari a 1/5 dei libri, uguali ai libri o al doppio dei libri.
 Successivamente per ogni combinazione verrà creato il file di input xxxxbyyyylzzzzdw.txt, e il modello verrà inviato come job al cluster Arrow del dipartimento di Ingegneria dell'Informazione.
+
+I risultati sono riportati nel foglio dati RisultatiIstanze.xlsx
