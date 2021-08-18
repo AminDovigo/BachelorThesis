@@ -1,0 +1,47 @@
+0040b0010l0040d1.txt
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Read_DataCheck                          1
+Found incumbent of value 0.000000 after 0.00 sec. (0.04 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 470 rows and 391 columns.
+MIP Presolve added 6 rows and 0 columns.
+MIP Presolve modified 478 coefficients.
+Aggregator did 110 substitutions.
+Reduced MIP has 409 rows, 749 columns, and 2253 nonzeros.
+Reduced MIP has 749 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (6.87 ticks)
+Probing fixed 8 vars, tightened 0 bounds.
+Probing time = 0.01 sec. (2.53 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 9 rows and 8 columns.
+Reduced MIP has 400 rows, 741 columns, and 2221 nonzeros.
+Reduced MIP has 741 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.82 ticks)
+Probing time = 0.01 sec. (2.43 ticks)
+Clique table members: 1604.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.01 sec. (2.56 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000    14534.0000              --- 
+*     0+    0                         1586.0000    14534.0000           816.39%
+*     0+    0                        14469.0000    14534.0000             0.45%
+      0     0    14534.0000    74    14469.0000    14534.0000      206    0.45%
+*     0+    0                        14534.0000    14534.0000             0.00%
+      0     0        cutoff          14534.0000    14534.0000      301    0.00%
+Elapsed time = 0.08 sec. (21.88 ticks, tree = 0.01 MB, solutions = 4)
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (21.95 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (21.95 ticks)
+obj[None] = 14534.0

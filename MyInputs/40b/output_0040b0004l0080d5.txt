@@ -1,0 +1,29 @@
+0040b0004l0080d5.txt
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Read_DataCheck                          1
+Found incumbent of value 0.000000 after 0.00 sec. (0.03 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 192 rows and 151 columns.
+MIP Presolve modified 547 coefficients.
+Aggregator did 22 substitutions.
+Reduced MIP has 427 rows, 671 columns, and 2051 nonzeros.
+Reduced MIP has 671 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (4.83 ticks)
+Probing fixed 4 vars, tightened 0 bounds.
+Probing time = 0.01 sec. (3.35 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 5 rows and 4 columns.
+Reduced MIP has 422 rows, 667 columns, and 2035 nonzeros.
+Reduced MIP has 667 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.92 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.04 sec. (13.69 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.04 sec. (13.69 ticks)
+obj[None] = 13892.0
