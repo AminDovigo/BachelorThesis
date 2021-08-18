@@ -1,0 +1,45 @@
+0020b0002l0040d3.txt
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Read_DataCheck                          1
+Found incumbent of value 0.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 53 rows and 14 columns.
+MIP Presolve modified 42 coefficients.
+Aggregator did 3 substitutions.
+Reduced MIP has 147 rows, 205 columns, and 658 nonzeros.
+Reduced MIP has 205 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.30 ticks)
+Probing fixed 2 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.48 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 2 columns.
+Reduced MIP has 144 rows, 203 columns, and 650 nonzeros.
+Reduced MIP has 203 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.60 ticks)
+Probing time = 0.00 sec. (0.44 ticks)
+Clique table members: 549.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.53 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000    10361.0000              --- 
+*     0+    0                        10052.0000    10361.0000             3.07%
+      0     0    10361.0000    23    10052.0000    10361.0000       77    3.07%
+*     0+    0                        10361.0000    10361.0000             0.00%
+      0     0        cutoff          10361.0000    10361.0000       77    0.00%
+Elapsed time = 0.02 sec. (4.30 ticks, tree = 0.01 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (4.31 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (4.31 ticks)
+obj[None] = 10361.0
