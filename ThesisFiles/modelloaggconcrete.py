@@ -90,12 +90,6 @@ def gc_rule(model, b):
 def hc_rule(model, l):
     return model.y[l] <= sum(model.x[l, b] for b in model.Books)
 
-def af_rule(model, l, d): 
-    if (d <= model.signup[l]):
-        return model.t[l, d] == 0
-    else:
-        return Constraint.Skip
-
 def bf_rule(model, l, d): 
     if (d >= nd - model.signup[l]):
         return model.v[l, d] == 0
@@ -135,7 +129,6 @@ def buildmodel(**kwargs):
     model.fc = Constraint(model.Libraries, rule=fc_rule)
     model.gc = Constraint(model.Books, rule=gc_rule)
     model.hc = Constraint(model.Libraries, rule=hc_rule)
-    #model.af = Constraint(model.Libraries, model.Days, rule=af_rule)
     model.bf = Constraint(model.Libraries, model.Days, rule=bf_rule)
     model.cf = Constraint(model.Libraries, model.Books, rule=cf_rule)
     return model
