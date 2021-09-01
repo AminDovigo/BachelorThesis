@@ -79,10 +79,12 @@ def ec_rule(model, l):
     #print(sum(model.x[l, b] for b in model.Books)) 
     #print(model.ship[l] * (nd - sum(((d + model.signup[l]) * model.v[l, d]) for d in model.Days))) 
     #print("libreria")
-    return sum(model.x[l, b] for b in model.Books) <= model.ship[l] *(nd - sum(((d + model.signup[l]) * model.v[l, d]) for d in model.Days)) 
+    return sum(model.x[l, b] for b in model.Books) <= model.ship[l] *
+        (nd - sum(((d + model.signup[l]) * model.v[l, d]) for d in model.Days)) 
         
 def fc_rule(model, l): 
-    return sum(model.x[l, b] for b in model.Books) <= model.y[l] * (nd - model.signup[l]) * model.ship[l]
+    return sum(model.x[l, b] for b in model.Books) <= model.y[l] * 
+        (nd - model.signup[l]) * model.ship[l]
 
 def gc_rule(model, b): 
     return model.z[b] <= sum(model.x[l, b] for l in model.Libraries)
